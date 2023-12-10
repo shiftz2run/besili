@@ -18,7 +18,7 @@ let a = document.getElementsByClassName('colImg');
         a[3].style.left = "693.917px";
         a[4].style.left = " 934.167px";
         a[5].style.left = "1174.42px";
-        a[6].style.left = "200px";
+        a[6].style.left = "0px";
 
         a[0].style.top = "-900.69px";
         a[1].style.top = "-700px";
