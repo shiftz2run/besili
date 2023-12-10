@@ -4,6 +4,21 @@ function mOpen(id,how) {
 function mClose(id) {
 	document.getElementById(id).style.display="none";
 }
+function pagePerso(n){
+    document.getElementsByClassName('pagePerso')[n].style.display="flex";
+}
+
+function pagePersoClose(){
+    let b = document.getElementsByClassName('pagePerso');
+    b[0].style.display="none";
+    b[1].style.display="none";
+    b[2].style.display="none";
+    b[3].style.display="none";
+    b[4].style.display="none";
+    b[5].style.display="none";
+    b[6].style.display="none";
+}
+
 
 function getRandomInt(max) {
   return Math.random() * max;
@@ -13,16 +28,16 @@ function distImg(){
 let a = document.getElementsByClassName('colImg');
     if (a && window.innerWidth>700) {
         a[0].style.left = "-26.8333px";
-        a[1].style.left = "-213.417px";
-        a[2].style.left = "-100px";
-        a[3].style.left = "693.917px";
+        a[1].style.left = "-313.417px";
+        a[2].style.left = "-300px";
+        a[3].style.left = "793.917px";
         a[4].style.left = " 934.167px";
-        a[5].style.left = "1174.42px";
-        a[6].style.left = "300px";
+        a[5].style.left = "1400px";
+        a[6].style.left = "500px";
 
         a[0].style.top = "-900.69px";
         a[1].style.top = "-700px";
-        a[2].style.top = "-46.272px";
+        a[2].style.top = "-200px";
         a[3].style.top = "-171.199px";
         a[4].style.top = " -700px";
         a[5].style.top = "-416.786px";

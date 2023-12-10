@@ -150,7 +150,10 @@ nav ul  li.active{
 	top: 0px;
 	left: 0px;
 	cursor: pointer;
-	z-index: 10;
+	z-index: 9999;
+}
+#membres{
+	z-index: 999;
 }
 .colImg p{
 	text-align: center;
@@ -164,7 +167,7 @@ nav ul  li.active{
 	display: block;
 }
 
-#persoG{
+.pagePerso{
 	height: 100%;
 	position: fixed;
 	top: 0px;
@@ -179,13 +182,13 @@ nav ul  li.active{
 	justify-content: space-around;
 	margin-bottom: 100px;
 }
-#perso img{
-	height: 80%;
+.pagePerso img{
+	height: 70%;
 	width: auto;
 	margin: 1em;
 	margin-top: 50px;
 }
-#perso div{
+.pagePerso div{
 	margin-top: 50px;
 	width: 50%;
 }
