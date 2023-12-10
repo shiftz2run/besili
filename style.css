@@ -48,6 +48,7 @@ p{
 
 div{
 	transform-style: inherit;
+
 }
 
 /*--------------------------SECTION----------------------------*/
@@ -136,6 +137,12 @@ nav ul  li.active{
 }
 .imgback{
 	transform: translateZ(-1px) scale(1.8);
+	-ms-transform: translateZ(-1px) scale(1.8);
+	-webkit-transform: translateZ(-1px) scale(1.8);
+	-moz-transform: translateZ(-1px) scale(1.8);
+	-o-transform:translateZ(-1px) scale(1.8);
+
+
 	position: absolute;
 	width: 60%;
 	height: 70%;
@@ -144,6 +151,10 @@ nav ul  li.active{
 	background-size: cover;
 	background-position: center;
 	transform: translateZ(-1px) scale(1.8);
+	-ms-transform: translateZ(-1px) scale(1.8);
+	-webkit-transform: translateZ(-1px) scale(1.8);
+	-moz-transform: translateZ(-1px) scale(1.8);
+	-o-transform:translateZ(-1px) scale(1.8);
 	position: absolute;
 	width: 500px;
 	height: 70%;
@@ -288,6 +299,10 @@ footer ul{
 		position: relative;
 		top: 0px;
 		transform:initial;
+		-ms-transform: initial;
+		-webkit-transform: initial;
+		-moz-transform: initial;
+		-o-transform:initial;
 		margin-bottom: 20px;
 	}
 	.colImg p{
