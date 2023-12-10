@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Besili test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="mNav">
+		<ul>
+			<li class="active"><a href ="index.html">Accueil</a></li>
+			<li class="menu"><a href ="collectif.html">Le Collectif</a>
+				<ul class="submenu">
+					<li><a href ="collectif.html#membres">Membres</a></li>
+				</ul>
+			</li>
+			<li class="menu"><a href ="spectacle.html">Spectacles</a>
+				<ul class="submenu">
+					<li><a href ="spectacle.html#maison">La Maison d'en Haut</a></li>
+					<li><a href ="spectacle.html#loup">Le Loup</a></li>
+				</ul>
+			</li>
+			<li><a href ="presse.html">Presse</a></li>
+			<li><a href ="agenda.html">Agenda</a></li>
+			<li><a href ="contact.html">Contact</a></li>
+		</ul>
+		<h1 onclick="mClose('mNav')" class="clBtn">X</h1>
+	</div>
+	<nav>
+			<h1>BESILI TRAFIC</h1>
+			<ul id="mainmenu">
+				<li class="active"><a href ="index.html">Accueil</a></li>
+				<li class="menu"><a href ="collectif.html">Le Collectif</a>
+					<ul class="submenu">
+						<li><a href ="collectif.html#membres">Membres</a></li>
+					</ul>
+				</li>
+				<li class="menu"><a href ="spectacle.html">Spectacles</a>
+					<ul class="submenu">
+						<li><a href ="spectacle.html#maison">La Maison d'en Haut</a></li>
+						<li><a href ="spectacle.html#loup">Le Loup</a></li>
+					</ul>
+				</li>
+				<li><a href ="presse.html">Presse</a></li>
+				<li><a href ="agenda.html">Agenda</a></li>
+				<li><a href ="#contact">Contact</a></li>
+			</ul>
+			<h1 onclick="mOpen('mNav','block')" id="menuBtn">Menu</h1>	
+			
+		</nav>
+	<!--CONT-->
+
+
+	<div id="cont">
+
+		<div class="section">
+			<div class="imgback imageBlured" style="background-image: url('img/photo2.jpg'); right: 0px;"></div>
+			<div class="cal">
+				<h2 class="center">Prochaines dates</h2>
+				<h2>La Maison d'en Haut</h2>
+					<a href="https://shop.utick.net/?pos=JARDINPASSION&module=ACTIVITYSERIEDETAILS&s=1FA61CCA-3B79-385A-E23DDE5906AD47FF">
+						<h2>7 - 8 Nov. 2023</h2>
+						<h2>Théatre Jardin Passion, Namur</h2>
+					</a>
+					<a href="https://shop.utick.net/?module=ACTIVITYSERIEDETAILS&pos=THEATREDELAVIE&s=FDD39685-B5F5-76D7-C182-8D7EA537D138">
+						<h2>16 - 27 Jan. 2024</h2>
+						<h2>Théatre de la Vie, Bruxelles</h2>
+					</a>
+					<a href="https://billetterie.theatre-du-jura.ch/selection/event/date?productId=10228918204874">
+						<h2>8 - 9 Mar. 2024</h2>
+						<h2>CCP Moutier en collaboration avec le Théâtre du Jura, Moutier</h2>
+					</a>
+			</div>
+		</div>
+
+		
+		<footer id="contact">
+				<ul>
+					<li>besilitrafic@gmail.com</li>
+					<li>+32 499 21 60 64</li>
+					<li>@besilitrafic</li>
+				</ul>
+		</footer>
+	</div>
+
+	
+<script src="site.js" ></script>
+</body>
+</html>
