@@ -122,12 +122,7 @@ scroller.addEventListener("scroll", (event) => {
             logo.style.opacity = 0;
         }
     }
-    if(scroller.scrollTop>=800){
-        document.getElementById("imgOne").style.opacity = 1-scroller.scrollTop*.001;
-        document.getElementById("imgTwo").style.opacity = scroller.scrollTop*.001;
-    }
-    else{
-        document.getElementById("imgOne").style.opacity = 1;
-        document.getElementById("imgTwo").style.opacity = 0;
-    }
+
+    document.getElementById("imgOne").style.opacity = 1-scroller.scrollTop*.001;
+    document.getElementById("imgTwo").style.opacity = scroller.scrollTop*.001;
 });
