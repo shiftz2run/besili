@@ -109,11 +109,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const scroller = document.querySelector("#cont");
+var logo =document.getElementById("logo");
 
 
 scroller.addEventListener("scroll", (event) => {
     console.log(scroller.scrollTop);
-    if(scroller.scrollTop>=720){
+    if(logo){
+        if(scroller.scrollTop>=600){
+            logo.style.opacity = 1;
+        }
+        else{
+            logo.style.opacity = 0;
+        }
+    }
+    if(scroller.scrollTop>=800){
         document.getElementById("imgOne").style.opacity = 1-scroller.scrollTop*.001;
         document.getElementById("imgTwo").style.opacity = scroller.scrollTop*.001;
     }

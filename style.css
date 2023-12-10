@@ -149,6 +149,9 @@ nav ul  li.active{
 .menu:hover .submenu, .submenu:hover .submenu,ul li:hover ul.submenu{
 	display: block;
 }
+#logo{
+		opacity: 0;
+	}
 
 
 /*--------------------------IMAGES----------------------------*/
@@ -309,6 +312,7 @@ footer ul li{
 	nav h1{
 		font-size: 1em;
 	}
+
 	.submenu{
 		display: block;
 		margin-left: 30px;
