@@ -72,7 +72,7 @@ div{
 	position: absolute;
 	top: 30%;
 	left: 0%;
-	font-size:10em;
+	font-size:7em;
 }
 .t2{
 	position: absolute;
@@ -93,13 +93,13 @@ div{
 	width: 55%;
 	position: relative;
 	float: right;
-	font-size:2em;
+	font-size:1.5em;
 
 }
 .section .left{
 	width: 55%;
 	position: relative;
-	font-size:2em;
+	font-size:1.5em;
 }
 .spacer{
 	height: 20vh;
@@ -245,7 +245,7 @@ div.imgback:nth-of-type(2){
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
-	font-size: 3em;
+	font-size: 2em;
 }
 
 /*--------------------------Footer----------------------------*/
@@ -341,12 +341,15 @@ iframe{
 		height: 5vh;
 	}
 	.t1{
-		font-size: 7em;
+		font-size: 5em;
 		text-align: center;
 	}
 	.section .right{
 		float: none;
 		width: 100%;
 		text-align: left;
+	}
+	#membres p{
+		display:inline-block ;
 	}
 }
