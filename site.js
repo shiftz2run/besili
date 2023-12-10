@@ -14,11 +14,11 @@ let a = document.getElementsByClassName('colImg');
     if (a && window.innerWidth>700) {
         a[0].style.left = "-26.8333px";
         a[1].style.left = "-213.417px";
-        a[2].style.left = "-453.667px";
+        a[2].style.left = "-100px";
         a[3].style.left = "693.917px";
         a[4].style.left = " 934.167px";
         a[5].style.left = "1174.42px";
-        a[6].style.left = "0px";
+        a[6].style.left = "300px";
 
         a[0].style.top = "-900.69px";
         a[1].style.top = "-700px";
