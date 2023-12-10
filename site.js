@@ -27,29 +27,29 @@ function getRandomInt(max) {
 function distImg(){
 let a = document.getElementsByClassName('colImg');
     if (a && window.innerWidth>700) {
-        a[0].style.left = "-26.8333px";
-        a[1].style.left = "-313.417px";
-        a[2].style.left = "-300px";
-        a[3].style.left = "793.917px";
-        a[4].style.left = " 934.167px";
-        a[5].style.left = "1400px";
-        a[6].style.left = "500px";
+        a[0].style.left = "10%";
+        a[1].style.left = "0%";
+        a[2].style.left = "20%";
+        a[3].style.left = "30%";
+        a[4].style.left = "50%";
+        a[5].style.left = "65%";
+        a[6].style.left = "80%";
 
-        a[0].style.top = "-900.69px";
-        a[1].style.top = "-700px";
-        a[2].style.top = "-200px";
-        a[3].style.top = "-171.199px";
-        a[4].style.top = " -700px";
-        a[5].style.top = "-416.786px";
-        a[6].style.top = "-300.199px";
+        a[0].style.top = "60%";
+        a[1].style.top = "100%";
+        a[2].style.top = "90%";
+        a[3].style.top = "50%";
+        a[4].style.top = "70%";
+        a[5].style.top = "70%";
+        a[6].style.top = "70%";
 
-        a[0].style.transform = "translateZ(-1.1px) scale(.9)";
-        a[1].style.transform = "translateZ(-0.4px) scale(.7)";
-        a[2].style.transform = "translateZ(-1px) scale(.9)";
-        a[3].style.transform = "translateZ(-0.1px) scale(.55)";
-        a[4].style.transform = "translateZ(-1.2px) scale(1)";
-        a[5].style.transform = "translateZ(-0.4px) scale(.8)";
-        a[6].style.transform = "translateZ(-0.7px) scale(.8)";
+        a[0].style.transform = "translateZ(-.1px) scale(.6)";
+        a[1].style.transform = "translateZ(-.1px) scale(.6)";
+        a[2].style.transform = "translateZ(-.1px) scale(.6)";
+        a[3].style.transform = "translateZ(-.1px) scale(.6)";
+        a[4].style.transform = "translateZ(-.1px) scale(.6)";
+        a[5].style.transform = "translateZ(-.1px) scale(.6)";
+        a[6].style.transform = "translateZ(-.1px) scale(.6)";
 
 		/*
 		
@@ -105,7 +105,20 @@ function calculateLeftPosition(index, spacing, imageWidth, totalImages, minDista
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    distImg();
+    //distImg();
 });
 
-        
+const scroller = document.querySelector("#cont");
+
+
+scroller.addEventListener("scroll", (event) => {
+    console.log(scroller.scrollTop);
+    if(scroller.scrollTop>=720){
+        document.getElementById("imgOne").style.opacity = 1-scroller.scrollTop*.001;
+        document.getElementById("imgTwo").style.opacity = scroller.scrollTop*.001;
+    }
+    else{
+        document.getElementById("imgOne").style.opacity = 1;
+        document.getElementById("imgTwo").style.opacity = 0;
+    }
+});

@@ -28,7 +28,7 @@
 		<h1 onclick="mClose('mNav')" id="clBtn">X</h1>
 	</div>
 	<nav>
-			<h1>BESILI TRAFIC</h1>
+			<h1 style="display: none;">BESILI TRAFIC</h1>
 			<ul id="mainmenu">
 				<li class="active"><a href ="index.html">Accueil</a></li>
 				<li class="menu"><a href ="collectif.html">Le Collectif</a>
@@ -43,7 +43,7 @@
 				</li>
 				<li><a href ="presse.html">Presse</a></li>
 				<li><a href ="agenda.html">Agenda</a></li>
-				<li><a href ="#contact">Contact</a></li>
+				<li><a href ="contact.html">Contact</a></li>
 			</ul>
 			<h1 onclick="mOpen('mNav','block')" id="menuBtn">Menu</h1>	
 			
@@ -52,41 +52,44 @@
 
 
 	<div id="cont">
-		<div class="section">
+		<div class="fp section">
 			<h1 class="t1">BESILI TRAFIC</h1>
-			<div class="imgback imageBlured" style="background-image: url('img/photo3.jpg'); right: 0px;"></div>
 		</div>
-
-		<div class="section">
-			<div class="imgback imageBlured" style="background-image: url('img/collectif.jpg');"></div>
-			<h2 class="t2" style="right: 0px">Nous sommes Besili Trafic. Nous avons grandi à la campagne et étudié nos arts dans les villes. Nous sommes belgo-suisses aux racines multiples. Nous sommes comédien·ne·s, musicien·ne·s, danseur·euse·s, scénographes, plasti-cien ·ne·s et performeur·euse·s.<br/><a href="collectif.html"><span class="center">+info</span></a></h2>
+		<div class="fp section">
+			<h2 class="right">Nous sommes Besili Trafic. Nous avons grandi à la campagne et étudié nos arts dans les villes. Nous sommes belgo-suisses aux racines multiples. Nous sommes comédien·ne·s, musicien·ne·s, danseur·euse·s, scénographes, plasti-cien ·ne·s et performeur·euse·s.<br/><a href="collectif.html"><span class="center">+info</span></a></h2>
 		</div>
-
-		<div class="section">
-			<div class="imgback imageBlured" style="background-image: url('img/photo2.jpg'); right: 0px;"></div>
+		
+		<div class="section">			
 			<div class="cal">
-				<h2 class="center">Prochaines dates</h2>
+				<p class="center">Prochaines dates</p>
 				<h2>La Maison d'en Haut</h2>
 					<a href="#">
-						<h2>7 - 8 Nov. 2023</h2>
-						<h2>Théatre Jardin Passion, Namur</h2>
+						<p>7 - 8 Nov. 2023</p>
+						<p>Théatre Jardin Passion, Namur</p>
 					</a>
 					<a href="#">
-						<h2>16 - 27 Jan. 2024</h2>
-						<h2>Théatre de la Vie, Bruxelles</h2>
+						<p>16 - 27 Jan. 2024</p>
+						<p>Théatre de la Vie, Bruxelles</p>
 					</a>
 				<br/><h2><a href="agenda.html"><span class="center">+info</span></a></h2>
 			</div>
 		</div>
-		
+		<div id="back">
+			<div id="imgOne" class="imgback imageBlured" style="top:0px; right:0px; background-image: url('img/photo3.jpg');"></div>
+			<div id="imgTwo" class="imgback imageBlured" style="left:0px; top:300%; background-image: url('img/photo2.jpg');"></div>
+		</div>
+
+
 		<footer id="contact">
-				<ul>
-					<li>besilitrafic@gmail.com</li>
-					<li>+32 499 21 60 64</li>
-					<li>@besilitrafic</li>
-				</ul>
+			<ul>
+				<li>besilitrafic@gmail.com</li>
+				<li>+32 499 21 60 64</li>
+				<li>@besilitrafic</li>
+			</ul>
 		</footer>
+		
 	</div>
+	
 
 	
 <script src="site.js" ></script>
