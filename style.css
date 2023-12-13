@@ -58,7 +58,7 @@ p{
 }
 
 div{
-	transform-style: inherit;
+	transform-style: preserve-3d;
 
 }
 .quote{
