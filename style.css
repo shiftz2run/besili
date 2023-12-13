@@ -69,6 +69,7 @@ div{
 	perspective: 1px;
 	transform-style: inherit;
 	height: 100vh;
+	height: -webkit-fill-available; /* Safari-specific prefix */
 	width: auto;
 	overflow-x: hidden;
 	overflow-y: scroll;
