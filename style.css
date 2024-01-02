@@ -299,7 +299,7 @@ footer{
 }
 footer ul{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 footer ul li{
 	text-align: center;
