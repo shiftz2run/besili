@@ -98,14 +98,22 @@ div{
 	vertical-align: text-top;
 	z-index: 50;
 }
+.col2{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
 .section .right{
 	width: 55%;
 	position: relative;
 	float: right;
-	font-size:1.5em;
-
 }
-.section .left{
+.section .max{
+	max-width: 100ch;
+	max-height: 16ch;
+  overflow: hidden;
+}
+.left p{
 	width: 55%;
 	position: relative;
 	font-size:1.5em;
@@ -115,6 +123,11 @@ div{
 }
 iframe{
 	height: 100%s;
+}
+.centerMax{
+	width:50%!important;
+	margin:0 auto!important;
+	text-align: center;
 }
 
 
@@ -142,6 +155,7 @@ nav ul li{
 	display: inline-block;
 	font-size: 2vw;
 	margin-right: 2vw;
+	position: relative;
 }
 nav ul  li.active{
 	text-decoration: underline;
@@ -162,6 +176,16 @@ nav ul  li.active{
 #logo{
 		opacity: 0;
 	}
+#clBtn{
+	position: fixed;
+	right: 10%;
+	top: 5%;
+	cursor: pointer;
+	font-size: 1em;
+}
+#clBtn:hover{
+	color: grey;
+}
 
 
 /*--------------------------IMAGES----------------------------*/
@@ -249,17 +273,20 @@ div.imgback:nth-of-type(2){
 	width: 100%;
 	text-align: center;
 }
-.cal a{
+.cal a, .cal span{
 	margin-top: 40px;
 	display: inline-block;
 	width: 100%;
 	margin-bottom: 10px;
 }
-.cal a p{
+.cal a p,.cal span p{
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
 	font-size: 2em;
+}
+.cal h2{
+	margin-top: 30px;
 }
 
 /*--------------------------Footer----------------------------*/
@@ -288,7 +315,7 @@ footer ul li{
 }
 #mNav{
 	position: absolute;
-	width: 80vw;
+	width: 100vw;
 	height: 100vh;
 	top: 0px;
 	left: 0px;
@@ -301,16 +328,6 @@ footer ul li{
 }
 #mNav li{
 	margin-bottom: 10px;
-}
-.clBtn{
-	position: fixed;
-	right: 10%;
-	top: 5%;
-	cursor: pointer;
-	font-size: 1em;
-}
-.clBtn:hover{
-	color: grey;
 }
 iframe{
 	height:900px;
@@ -371,5 +388,8 @@ iframe{
 	}
 	.imgback{
 		width:90%;
+	}
+	.section .max{
+		max-height: 30ch;
 	}
 }
